@@ -1,0 +1,46 @@
+{
+  "expo": {
+    "name": "WardSeal MFA",
+    "slug": "wardseal-mfa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0f172a"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wardseal.mfa",
+      "infoPlist": {
+        "NSFaceIDUsageDescription": "Use FaceID to approve login requests securely."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0f172a"
+      },
+      "package": "com.wardseal.mfa",
+      "permissions": [
+        "USE_BIOMETRIC",
+        "USE_FINGERPRINT"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-local-authentication",
+        {
+          "faceIDPermission": "Allow WardSeal to use FaceID for secure authentication."
+        }
+      ],
+      "expo-notifications"
+    ]
+  }
+}
