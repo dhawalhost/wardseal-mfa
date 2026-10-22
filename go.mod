@@ -1,6 +1,6 @@
 module github.com/dhawalhost/wardseal-mfa
 
-go 1.26.2
+go 1.26.10
 
 require (
 	github.com/gin-contrib/cors v1.7.7
